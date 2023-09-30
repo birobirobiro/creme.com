@@ -1,6 +1,9 @@
 @font-face {
-  font-family: 'PalmerLakePrint';
-  src: url('/assets/fonts/PalmerLakePrint.otf') format('opentype');
+  font-family: 'Palmer Lake Print';
+  src: url('https://www.bu.edu/cdn/fonts/Palmer-Lake-Print-Regular/font.woff2') format('woff2'),
+    url('https://www.bu.edu/cdn/fonts/Palmer-Lake-Print-Regular/font.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
 }
 
 * {
@@ -100,7 +103,7 @@ video {
 }
 
 .featured-title {
-  font-family: 'PalmerLakePrint', sans-serif;
+  font-family: 'Palmer Lake Print', sans-serif;
   color: #F7945F;
   font-family: Palmer Lake Print;
   font-size: 2.25rem;
