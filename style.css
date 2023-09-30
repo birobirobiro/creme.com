@@ -70,36 +70,27 @@ button {
 
 .hero {
   display: flex;
+  flex-direction: column;
   width: 100%;
-}
-
-video {
-  width: 100%;
-  height: 40rem;
-  object-fit: cover;
   position: relative;
 }
 
 .featured {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   position: absolute;
-  bottom: 17rem;
-  z-index: 1;
+  gap: 1rem;
+  bottom: 0rem;
+  left: 0;
   width: 100%;
-  padding: 0 1.25rem;
+  padding: 0 2rem;
+  background: linear-gradient(180deg, rgba(99, 0, 0, 0.00) 0%, #000 75%, #000 75%);
 }
 
-.featured::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
+video {
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: linear-gradient(180deg, rgba(99, 0, 0, 0), rgba(0, 0, 0, 1) 180px, rgba(0, 0, 0, 1) 41%)
+  height: 35rem;
+  object-fit: cover;
 }
 
 .featured-title {
@@ -111,6 +102,16 @@ video {
   font-weight: 400;
   line-height: 2.5rem;
   /* 111.111% */
+}
+
+.featured-chef {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.25rem;
+  /* 112.5% */
 }
 
 .menu {
@@ -133,6 +134,8 @@ video {
   border: none;
   width: 6.25rem;
   height: 0.25rems;
+  margin-bottom: 3rem;
+  margin-top: -3rem;
 }
 
 .filter {
@@ -157,4 +160,6 @@ video {
   background-color: transparent;
   color: #fff;
   outline: none;
+  font-size: 1rem;
+  font-family: Inter;
 }
