@@ -1,108 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CREME: Vídeos de Receitas Passo a Passo</title>
 
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CREME: Vídeos de Receitas Passo a Passo</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
-      defer
-    ></script>
-    <script src="./main.js" defer></script>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 
-  <body>
-    <header>
-      <img src="./assets/icons/logo.svg" alt="" class="logo" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+  <script src="./main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="./assets/icons/logo.svg" alt="" class="logo" />
+
+    <div>
+      <a href="https://cre.me/" target="_blank">
+        <button class="button-app">Use App</button>
+      </a>
+
+      <img src="./assets/icons/menu-open.svg" alt="" class="menu" />
+    </div>
+  </header>
+
+  <section class="hero-mobile">
+    <video src="./assets/video/video.mp4" autoplay muted loop playsinline></video>
+
+    <section class="featured">
+      <h2 class="featured-title">Destaque</h2>
+
+      <h1 class="featured-chef">Margarita de Kimchi</h1>
+    </section>
+  </section>
+
+  <aside>
+    <div>
+      <img src="./assets/icons/logo.svg" alt="" id="logo-menu" />
+      <img src="./assets/icons/home.svg" alt="">
+      <img src="./assets/icons/search.svg" alt="">
+      <img src="./assets/icons/hot.svg" alt="">
+    </div>
+
+    <div>
+      <img src="./assets/icons/instagram.svg" alt="" />
+      <img src="./assets/icons/tiktok.svg" alt="" />
+      <img src="./assets/icons/youtube.svg" alt="" />
+    </div>
+  </aside>
+
+  <div class="container">
+    <section class="filter">
+      <button class="button-featured">Ver receita</button>
 
       <div>
-        <a href="https://cre.me/" target="_blank">
-          <button class="button-app">Use App</button>
-        </a>
+        <img src="./assets/icons/search-input.svg" alt="" />
 
-        <img src="./assets/icons/menu-open.svg" alt="" class="menu" />
+        <input type="text" placeholder="O que vamos cozinhar?" />
       </div>
-    </header>
 
-    <section class="hero">
-      <video
-        src="./assets/video/video.mp4"
-        autoplay
-        muted
-        loop
-        playsinline
-      ></video>
+      <button class="download-app">
+        <img src="./assets/icons/qr-code.svg" alt="">
 
-      <section class="featured">
-        <h2 class="featured-title">Destaque</h2>
-
-        <h1 class="featured-chef">Margarita de Kimchi</h1>
-      </section>
+        <span>Baixe o app</span>
+      </button>
     </section>
 
-    <div class="container">
-      <section class="filter">
-        <button class="button-featured">Ver receita</button>
+    <section class="hero-desktop">
+      <div class="video-container">
+        <video src="./assets/video/video.mp4" autoplay muted loop playsinline></video>
+      </div>
+
+      <div class="featured-desktop-container">
+        <span class="featured-title-desktop">Destaque</span>
 
         <div>
-          <img src="./assets/icons/search-input.svg" alt="" />
-
-          <input type="text" placeholder="O que vamos cozinhar?" />
-        </div>
-      </section>
-
-      <section class="splide" id="splide1" aria-labelledby="carousel-heading">
-        <div class="wrap">
-          <h2 id="carousel-heading">New Releases</h2>
-          <button>View All</button>
+          <h1>Gin Dry Martini</h1>
         </div>
 
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1980&q=80"
-                  alt="imagem teste"
-                />
-                <p>Blueberry Lavender Semifreddo</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1980&q=80"
-                  alt="imagem teste"
-                />
-                <p>Blueberry Lavender Semifreddo</p>
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1980&q=80"
-                  alt="imagem teste"
-                />
-                <p>Blueberry Lavender Semifreddo</p>
-              </div>
-            </li>
-          </ul>
+        <div>
+          <p>Um dos pilares do mundo dos coquetéis, o dry martini é um clássico poderoso! Todo mundo tem sua
+            preferência quando se trata de proporções, ... mais</p>
         </div>
-      </section>
-    </div>
-  </body>
+
+        <div>
+          <button class="button-featured-desktop">Ver receita</button>
+        </div>
+
+        <div class="cards-featured">
+          <div class="card">
+            <img src="./assets/images/cards-featured/thumb1.jpeg" alt="">
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/images/cards-featured/thumb2.jpeg" alt="">
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/images/cards-featured/thumb3.jpeg" alt="">
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div>
+          <button class="button-featured">Ver todos os passos</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="splide" id="splide1" aria-labelledby="carousel-heading">
+      <div class="wrap">
+        <h2 id="carousel-heading">Novas Receitas</h2>
+        <button>VER TODOS</button>
+      </div>
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1980&q=80"
+                alt="imagem teste" />
+              <p>Blueberry Lavender Semifreddo</p>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1980&q=80"
+                alt="imagem teste" />
+              <p>Blueberry Lavender Semifreddo</p>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1980&q=80"
+                alt="imagem teste" />
+              <p>Blueberry Lavender Semifreddo</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
