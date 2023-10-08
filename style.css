@@ -212,78 +212,9 @@ video {
 .splide .splide__slide img {
   width: 100%;
   max-width: 17rem;
-
-  border-radius: 24px;
-  object-fit: cover;
-  aspect-ratio: 3/4;
-}
-
-/* carousel */
-
-.splide {
-  width: 100%;
-}
-
-.splide .wrap h2 {
-  font-family: Palmer Lake Print;
-  font-size: 2.625rem;
-}
-
-.splide .wrap button {
-  color: var(--Button-Text);
-  display: grid;
-  place-items: center;
-
-  height: 2.25rem;
-  padding-inline: 1rem;
-
-  background: var(--Button-Background);
-  align-self: flex-end;
-  margin-bottom: 5px;
-}
-
-.splide .wrap {
-  display: flex;
-  justify-content: space-between;
-}
-
-.splide .splide__arrows {
-  display: none;
-}
-
-.splide:hover .splide__arrows {
-  display: block;
-}
-
-.splide .splide__arrow:disabled {
-  display: none;
-}
-
-.splide .splide__arrow {
-  top: 60%;
-  width: 50px;
-  height: 50px;
-
-  opacity: 1;
-  background: #f1f1f1;
-  transition: all 0.2s;
-}
-
-.splide .splide__list {
-  gap: clamp(0.5rem, -0.0282rem + 2.2535vw, 2rem);
-}
-
-.splide .splide__slide:first-child {
-  margin-left: 1rem;
-}
-
-.splide .splide__slide img {
-  width: 100%;
-}
-
-.splide .splide__slide div {
+=========
   width: clamp(10.4375rem, 8.1268rem + 9.8592vw, 17rem);
-  position: relative;
+>>>>>>>>> Temporary merge branch 2
 
   border-radius: 24px;
   object-fit: cover;
