@@ -328,7 +328,6 @@ video {
 
 .splide .splide__slide div {
   width: clamp(10.4375rem, 8.1268rem + 9.8592vw, 17rem);
-  position: relative;
 
   border-radius: 24px;
   object-fit: cover;
