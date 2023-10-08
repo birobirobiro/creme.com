@@ -4,7 +4,7 @@ new Splide(`#splide${1}`, {
   // autoplay: true,
   // interval: 3000,
   pagination: false,
-  arrows: false,
+  arrows: true,
   keyboard: true,
   autoWidth: true,
 }).mount()

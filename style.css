@@ -247,6 +247,28 @@ video {
   justify-content: space-between;
 }
 
+.splide .splide__arrows {
+  display: none;
+}
+
+.splide:hover .splide__arrows {
+  display: block;
+}
+
+.splide .splide__arrow:disabled {
+  display: none;
+}
+
+.splide .splide__arrow {
+  top: 60%;
+  width: 50px;
+  height: 50px;
+
+  opacity: 1;
+  background: #f1f1f1;
+  transition: all 0.2s;
+}
+
 .splide .splide__list {
   gap: clamp(0.5rem, -0.0282rem + 2.2535vw, 2rem);
 }
@@ -256,9 +278,36 @@ video {
 }
 
 .splide .splide__slide img {
+  width: 100%;
+}
+
+.splide .splide__slide div {
   width: clamp(10.4375rem, 8.1268rem + 9.8592vw, 17rem);
+  position: relative;
 
   border-radius: 24px;
   object-fit: cover;
   aspect-ratio: 3/4;
+}
+
+.splide .splide__slide div p {
+  position: absolute;
+
+  width: clamp(8.75rem, 7.2095rem + 6.5728vw, 13.125rem);
+
+  font-size: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+  font-weight: 600;
+
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+@media (max-width: 782px) {
+  .splide .splide__arrows {
+    display: none;
+  }
+
+  .splide:hover .splide__arrows {
+    display: none;
+  }
 }
